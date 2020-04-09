@@ -1,4 +1,5 @@
 const local_app = function () {}
+var request = require('request');
 
 // * ———————————————————————————————————————————————————————— * //
 // * 	init
@@ -8,29 +9,33 @@ const local_app = function () {}
 // *	@return {nothing}
 // * ———————————————————————————————————————————————————————— * //
 local_app.prototype.init = function (app) {
-	// express app available here
-	// don't forget these routes will be available on production server server (defaults to localhost:5000)
+  // express app available here
+  // don't forget these routes will be available on production server server (defaults to localhost:5000)
+
+  // app.get('/user', function (req, res) {
+  //   enduro.api.temper.render('user', { user_name: 'martin' })
+  //       .then((output) => {
+  //           res.send(output)
+  //       })
+  // });
+
+  app.get('/api/get_random_number', function (req, res) {
+    res.send(Math.random().toString())
+  });
+
+  app.get("/about", (req, res, next) => {
+    request.get("https://api.flickr.com/services/feeds/photoset.gne?set=72157623352223751&nsid=33129098@N06&lang=en-us&format=json&nojsoncallback=1", (err, response, body) => {
+        if (err) {
+            return next(err);
+        }
+        enduro.api.temper.render('about', JSON.parse(body))
+          .then((output) => {
+              res.send(output)
+        })
+        // res.send({data: JSON.parse(body)});
+    });
+  });
 }
 
-const https = require('https');
 
-https.get('https://api.flickr.com/services/feeds/photoset.gne?set=72157623352223751&nsid=33129098@N06&lang=en-us&format=json&nojsoncallback=1', (resp) => {
-	let data = '';
-
-	// A chunk of data has been recieved.
-	resp.on('data', (chunk) => {
-		data += chunk;
-	});
-
-	// The whole response has been received. Print out the result.
-	resp.on('end', () => {
-		const flickrData = JSON.parse(data);
-		// let flickrData = JSON.parse('{ "title": "Content from Arrows on the Streets"}');
-		console.log(flickrData.link);
-	});
-
-}).on("error", (err) => {
-	console.log("Error: " + err.message);
-});
-
-module.exports = new local_app({"test":"value"})
+module.exports = new local_app()

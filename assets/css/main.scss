@@ -712,17 +712,20 @@ aside .inner {
 .album-wrapper ul {
   margin: 20px 20px 0 0;
   width: 221px;
+
+  li {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+
+    img {
+      border: 3px solid white;
+      box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+    }
+  }
 }
-.album-wrapper ul li {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  text-align: center;
-}
-.album-wrapper ul li img {
-  border: 3px solid white;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.4);
-}
+
 .album-wrapper a {
   display: block;
   margin-bottom: 20px;

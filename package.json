@@ -9,6 +9,8 @@
 	"author": "author goes here",
 	"license": "MIT",
 	"dependencies": {
-		"enduro": "*"
+		"enduro": "*",
+		"express": "^4.17.1",
+		"request": "^2.88.2"
 	}
 }
