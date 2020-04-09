@@ -1,0 +1,3 @@
+define(["handlebars"], function(Handlebars) { return Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div id=\"contact-bubble\">\n  <p><em>Email us at:</em><br> <a href=\"mailto:vm@konspiredesign.com?Subject=Inquiry%20about%20web%20design\">vm@konspiredesign.com</a></p>\n  <div class=\"close\">x</div>\n</div>";
+},"useData":true}); });

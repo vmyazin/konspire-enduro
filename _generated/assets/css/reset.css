@@ -1,0 +1,46 @@
+/* RESET */
+/* ----------------------------------------- */
+/* Global reset */
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul, li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+a img {
+  border: none; }
+
+/* Gets rid of IE's blue borders */
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc2V0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsV0FBVztBQUNYLCtDQUErQztBQUUvQyxrQkFBa0I7QUFDbEIsaUdBQWlHO0FBQ2pHO0VBQStILFVBQVE7RUFBRSxXQUFVLEVBQUU7O0FBQ3JKO0VBQVEsMEJBQXdCO0VBQUUsa0JBQWlCLEVBQUU7O0FBQ3JEO0VBQWdCLFVBQVMsRUFBRTs7QUFDM0I7RUFBeUQsbUJBQWlCO0VBQUUsb0JBQW1CLEVBQUU7O0FBQ2pHO0VBQWEsaUJBQWdCLEVBQUU7O0FBQy9CO0VBQWMsaUJBQWdCLEVBQUU7O0FBQ2hDO0VBQXlCLGdCQUFjO0VBQUUsb0JBQW1CLEVBQUU7O0FBQzlEO0VBQW9CLFlBQVUsRUFBRTs7QUFFaEMsd0JBQXdCO0FBQ3hCLCtDQUErQztBQUMvQztFQUFTLGtCQUFpQixFQUFFOztBQUM1QjtFQUFLLG1CQUFrQixFQUFFOztBQUN6QjtFQUFRLGFBQVksRUFBRTs7QUFBQSxtQ0FBbUMiLCJmaWxlIjoicmVzZXQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4vKiBSRVNFVCAqL1xuLyogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cblxuLyogR2xvYmFsIHJlc2V0ICovXG4vKiBCYXNlZCB1cG9uICdyZXNldC5jc3MnIGluIHRoZSBZYWhvbyEgVXNlciBJbnRlcmZhY2UgTGlicmFyeTogaHR0cDovL2RldmVsb3Blci55YWhvby5jb20veXVpICovXG4qLCBodG1sLCBib2R5LCBkaXYsIGRsLCBkdCwgZGQsIHVsLCBvbCwgbGksIGgxLCBoMiwgaDMsIGg0LCBoNSwgaDYsIHByZSwgZm9ybSwgbGFiZWwsIGZpZWxkc2V0LCBpbnB1dCwgcCwgYmxvY2txdW90ZSwgdGgsIHRkIHsgbWFyZ2luOjA7IHBhZGRpbmc6MCB9XG50YWJsZSB7IGJvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTsgYm9yZGVyLXNwYWNpbmc6MCB9XG5maWVsZHNldCwgaW1nIHsgYm9yZGVyOjAgfVxuYWRkcmVzcywgY2FwdGlvbiwgY2l0ZSwgY29kZSwgZGZuLCBlbSwgc3Ryb25nLCB0aCwgdmFyIHsgZm9udC1zdHlsZTpub3JtYWw7IGZvbnQtd2VpZ2h0Om5vcm1hbCB9XG5vbCwgdWwsIGxpIHsgbGlzdC1zdHlsZTpub25lIH1cbmNhcHRpb24sIHRoIHsgdGV4dC1hbGlnbjpsZWZ0IH1cbmgxLCBoMiwgaDMsIGg0LCBoNSwgaDYgeyBmb250LXNpemU6MTAwJTsgZm9udC13ZWlnaHQ6bm9ybWFsIH1cbnE6YmVmb3JlLCBxOmFmdGVyIHsgY29udGVudDonJ31cblxuLyogR2xvYmFsIHJlc2V0LVJFU0VUICovXG4vKiBUaGUgYmVsb3cgcmVzdG9yZXMgc29tZSBzZW5zaWJsZSBkZWZhdWx0cyAqL1xuc3Ryb25nIHsgZm9udC13ZWlnaHQ6Ym9sZCB9XG5lbSB7IGZvbnQtc3R5bGU6aXRhbGljIH1cbmEgaW1nIHsgYm9yZGVyOm5vbmUgfSAvKiBHZXRzIHJpZCBvZiBJRSdzIGJsdWUgYm9yZGVycyAqLyJdfQ== */
